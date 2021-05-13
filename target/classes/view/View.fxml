@@ -16,7 +16,6 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Spinner layoutX="25.0" layoutY="52.0" />
                   <Label layoutX="25.0" layoutY="85.0" text="Bucharest" textFill="#868686">
                      <font>
                         <Font size="24.0" />
@@ -34,9 +33,20 @@
                   </Label>
                   <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="25.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0">
                      <image>
-                        <Image url="@../../../img/09d@2x.png" />
+                        <Image url="@../img/09d@2x.png" />
                      </image>
                   </ImageView>
+                  <Label layoutX="129.0" layoutY="179.0" text="2">
+                     <font>
+                        <Font size="72.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="174.0" layoutY="199.0" text="°C" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="100.0">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <ComboBox layoutX="26.0" layoutY="60.0" prefWidth="150.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="50.0" />
                </children></AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="298.0" prefWidth="401.0">
                <children>
@@ -45,13 +55,12 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Spinner layoutX="25.0" layoutY="52.0" />
-                  <Label layoutX="60.0" layoutY="200.0" text="Humidity: 99%" textFill="#868686" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="200.0">
+                  <Label layoutX="60.0" layoutY="200.0" text="Humidity:" textFill="#868686" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="138.0" AnchorPane.topAnchor="200.0">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="60.0" layoutY="227.0" text="Wind: 5 km/h" textFill="#868686">
+                  <Label layoutX="60.0" layoutY="227.0" text="Wind:" textFill="#868686">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -59,6 +68,27 @@
                   <Label layoutX="60.0" layoutY="244.0" text="..." textFill="#868686">
                      <font>
                         <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ComboBox layoutX="25.0" layoutY="52.0" prefWidth="150.0" AnchorPane.bottomAnchor="223.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="50.0" />
+                  <Label layoutX="138.0" layoutY="200.0" text="99" textFill="#686868" AnchorPane.bottomAnchor="71.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="161.0" layoutY="200.0" text="\%" textFill="#686868">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="109.0" layoutY="227.0" text="5" textFill="#686868">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="127.0" layoutY="227.0" text="km/h" textFill="#686868">
+                     <font>
+                        <Font size="18.0" />
                      </font>
                   </Label>
                </children></AnchorPane>
