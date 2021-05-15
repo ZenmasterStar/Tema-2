@@ -16,17 +16,17 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="25.0" layoutY="85.0" text="Bucharest" textFill="#868686">
+                  <Label fx:id="cityLabel" layoutX="25.0" layoutY="85.0" text="City" textFill="#868686">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="25.0" layoutY="114.0" text="Tuesday 8:00 PM " textFill="#868686">
+                  <Label fx:id="timeLabel" layoutX="25.0" layoutY="114.0" text="Time" textFill="#868686">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="25.0" layoutY="136.0" text="Light Rain Showers" textFill="#868686">
+                  <Label fx:id="weatherLabel" layoutX="25.0" layoutY="136.0" text="Weather" textFill="#868686">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -36,17 +36,17 @@
                         <Image url="@../img/09d@2x.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="129.0" layoutY="179.0" text="2">
+                  <Label fx:id="temperatureLabel" layoutX="112.0" layoutY="182.0" text="Temp">
                      <font>
-                        <Font size="72.0" />
+                        <Font size="48.0" />
                      </font>
                   </Label>
-                  <Label layoutX="174.0" layoutY="199.0" text="°C" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="100.0">
+                  <Label layoutX="232.0" layoutY="182.0" text="°C" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="35.0">
                      <font>
                         <Font size="30.0" />
                      </font>
                   </Label>
-                  <ComboBox layoutX="26.0" layoutY="60.0" prefWidth="150.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="50.0" />
+                  <ComboBox fx:id="countryComboBox" layoutX="26.0" layoutY="60.0" prefWidth="150.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="50.0" />
                </children></AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="298.0" prefWidth="401.0">
                <children>
@@ -70,23 +70,23 @@
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <ComboBox layoutX="25.0" layoutY="52.0" prefWidth="150.0" AnchorPane.bottomAnchor="223.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="50.0" />
-                  <Label layoutX="138.0" layoutY="200.0" text="99" textFill="#686868" AnchorPane.bottomAnchor="71.0">
+                  <ComboBox fx:id="cityComboBox" layoutX="25.0" layoutY="52.0" prefWidth="150.0" AnchorPane.bottomAnchor="223.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="50.0" />
+                  <Label fx:id="humidityLabel" layoutX="138.0" layoutY="200.0" text="....." textFill="#686868" AnchorPane.bottomAnchor="71.0">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="161.0" layoutY="200.0" text="\%" textFill="#686868">
+                  <Label layoutX="161.0" layoutY="200.0" text="\%" textFill="#686868" AnchorPane.rightAnchor="110.0">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="109.0" layoutY="227.0" text="5" textFill="#686868">
+                  <Label fx:id="windLabel" layoutX="109.0" layoutY="227.0" text="....." textFill="#686868">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="127.0" layoutY="227.0" text="km/h" textFill="#686868">
+                  <Label layoutX="127.0" layoutY="227.0" text="km/h" textFill="#686868" AnchorPane.rightAnchor="110.0">
                      <font>
                         <Font size="18.0" />
                      </font>

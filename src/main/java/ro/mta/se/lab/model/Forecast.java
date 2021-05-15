@@ -1,23 +1,31 @@
 package ro.mta.se.lab.model;
 
+import com.eclipsesource.json.Json;
+import com.eclipsesource.json.JsonArray;
+import com.eclipsesource.json.JsonObject;
+import com.eclipsesource.json.JsonValue;
 import javafx.beans.property.*;
 
-import java.io.BufferedReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
+
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
+import java.util.Date;
+import java.util.Locale;
+import java.util.TimeZone;
 
 public class Forecast {
     StringProperty city;
+    StringProperty country;
     StringProperty time;
     StringProperty weather;
-    IntegerProperty temperature;
-    IntegerProperty humidity;
-    IntegerProperty wind;
+    DoubleProperty temperature;
+    DoubleProperty humidity;
+    DoubleProperty wind;
 
     String getAPI(double lat, double lon) {
         String API_KEY = "210a3979b414e1bbdaab37a766008f2f";
@@ -46,18 +54,35 @@ public class Forecast {
         }
     }
 
-    public Forecast(City city) {
+    public Forecast(City city) throws IOException {
         this.city = new SimpleStringProperty(city.getNm());
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("E H:m a");
-        LocalDateTime now = LocalDateTime.now();
-        this.time = new SimpleStringProperty(dtf.format(now));
+        this.country = new SimpleStringProperty(city.getCountryCode());
+
         String API = getAPI(city.getLat(), city.getLon());
-        
-        //this.ID = new SimpleLongProperty(ID);
-        //this.nm = new SimpleStringProperty(nm);
-        //this.lat = new SimpleDoubleProperty(lat);
-        //this.lon = new SimpleDoubleProperty(lon);
-        //this.countryCode = new SimpleStringProperty(countryCode);
+
+        JsonObject one = Json.parse(API).asObject();
+        JsonObject two = one.get("current").asObject();
+        //JsonObject three = two.get("weather").asObject();
+        this.weather = new SimpleStringProperty("Light Rain Showers");
+
+        JsonObject object = Json.parse(API).asObject();
+        String timezone = object.get("timezone").asString();
+        JsonObject current = object.get("current").asObject();
+        Long dt = current.get("dt").asLong();
+        Double temperature = current.get("temp").asDouble();
+        Double humidity = current.get("humidity").asDouble();
+        Double wind = current.get("wind_speed").asDouble();
+
+        SimpleDateFormat sdf = new SimpleDateFormat("EEEE HH:mm a", Locale.ENGLISH);
+        sdf.setTimeZone(TimeZone.getTimeZone(timezone));
+        this.time = new SimpleStringProperty(sdf.format(dt*1000));
+
+        //JsonObject weatherObject = current.get("weather").asObject();
+        //String weather = weatherObject.get("main").asString();
+
+        this.temperature = new SimpleDoubleProperty(temperature);
+        this.humidity = new SimpleDoubleProperty(humidity);
+        this.wind = new SimpleDoubleProperty(wind);
     }
 
     public String getCity() {
@@ -70,6 +95,18 @@ public class Forecast {
 
     public void setCity(String city) {
         this.city.set(city);
+    }
+
+    public String getCountry() {
+        return country.get();
+    }
+
+    public StringProperty countryProperty() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country.set(country);
     }
 
     public String getTime() {
@@ -96,42 +133,51 @@ public class Forecast {
         this.weather.set(weather);
     }
 
-    public Integer getTemperature() {
+    public Double getTemperature() {
         return temperature.get();
     }
 
-    public IntegerProperty temperatureProperty() {
+    public DoubleProperty temperatureProperty() {
         return temperature;
     }
 
-    public void setTemperature(Integer temperature) {
+    public void setTemperature(Double temperature) {
         this.temperature.set(temperature);
     }
 
-    public Integer getHumidity() {
+    public Double getHumidity() {
         return humidity.get();
     }
 
-    public IntegerProperty humidityProperty() {
+    public DoubleProperty humidityProperty() {
         return humidity;
     }
 
-    public void setHumidity(Integer humidity) {
+    public void setHumidity(Double humidity) {
         this.humidity.set(humidity);
     }
 
-    public Integer getWind() {
+    public Double getWind() {
         return wind.get();
     }
 
-    public IntegerProperty windProperty() {
+    public DoubleProperty windProperty() {
         return wind;
     }
 
-    public void setWind(Integer wind) {
+    public void setWind(Double wind) {
         this.wind.set(wind);
     }
 
-
+    public void printForecast(){
+        System.out.println(getCity());
+        System.out.println(getCountry());
+        System.out.println(getTime());
+        System.out.println(getWeather());
+        System.out.println(getTemperature());
+        System.out.println(getHumidity());
+        System.out.println(getWind());
+        System.out.println();
+    }
 
 }

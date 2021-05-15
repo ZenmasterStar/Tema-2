@@ -1,3 +1,4 @@
 ro\mta\se\lab\model\Forecast.class
 ro\mta\se\lab\MainApp.class
+ro\mta\se\lab\controller\ForecastController.class
 ro\mta\se\lab\model\City.class

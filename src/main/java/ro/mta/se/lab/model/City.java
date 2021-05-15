@@ -78,11 +78,11 @@ public class City {
     }
 
     public void printCity(){
-        System.out.println(this.ID);
-        System.out.println(this.nm);
-        System.out.println(this.lat);
-        System.out.println(this.lon);
-        System.out.println(this.countryCode);
+        System.out.println(getID());
+        System.out.println(getNm());
+        System.out.println(getLat());
+        System.out.println(getLon());
+        System.out.println(getCountryCode());
         System.out.println();
     }
 }
