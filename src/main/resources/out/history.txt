@@ -1,0 +1,280 @@
+Recorded at: 2021/05/16 15:48:02
+Forecast Time: Sunday 15:47 PM
+Forecast Country: RU
+Forecast City: Razvilka
+Forecast Weather: light rain
+Forecast Temperature: 22.11 °C
+Forecast Humidity: 49.0 %
+Forecast Wind speed: 3.0 km/h
+Forecast Icon: https://openweathermap.org/img/w/10d.png
+
+Recorded at: 2021/05/16 15:48:04
+Forecast Time: Sunday 14:47 PM
+Forecast Country: NL
+Forecast City: Rotterdam
+Forecast Weather: broken clouds
+Forecast Temperature: 12.79 °C
+Forecast Humidity: 76.0 %
+Forecast Wind speed: 6.69 km/h
+Forecast Icon: https://openweathermap.org/img/w/04d.png
+
+Recorded at: 2021/05/16 15:48:06
+Forecast Time: Sunday 20:47 PM
+Forecast Country: CN
+Forecast City: Shanghai
+Forecast Weather: light rain
+Forecast Temperature: 19.2 °C
+Forecast Humidity: 82.0 %
+Forecast Wind speed: 6.0 km/h
+Forecast Icon: https://openweathermap.org/img/w/10n.png
+
+Recorded at: 2021/05/16 15:48:09
+Forecast Time: Sunday 07:47 AM
+Forecast Country: CA
+Forecast City: Winnipeg
+Forecast Weather: overcast clouds
+Forecast Temperature: 13.19 °C
+Forecast Humidity: 62.0 %
+Forecast Wind speed: 1.03 km/h
+Forecast Icon: https://openweathermap.org/img/w/04d.png
+
+Recorded at: 2021/05/16 15:56:22
+Forecast Time: Sunday 15:56 PM
+Forecast Country: RU
+Forecast City: Moscow
+Forecast Weather: light rain
+Forecast Temperature: 22.72 °C
+Forecast Humidity: 40.0 %
+Forecast Wind speed: 7.0 km/h
+Forecast Icon: https://openweathermap.org/img/w/10d.png
+
+Recorded at: 2021/05/16 15:56:25
+Forecast Time: Sunday 15:56 PM
+Forecast Country: RO
+Forecast City: Bucharest
+Forecast Weather: scattered clouds
+Forecast Temperature: 21.51 °C
+Forecast Humidity: 73.0 %
+Forecast Wind speed: 3.09 km/h
+Forecast Icon: https://openweathermap.org/img/w/03d.png
+
+Recorded at: 2021/05/16 15:56:26
+Forecast Time: Sunday 15:56 PM
+Forecast Country: RO
+Forecast City: Constanta
+Forecast Weather: few clouds
+Forecast Temperature: 21.0 °C
+Forecast Humidity: 64.0 %
+Forecast Wind speed: 1.54 km/h
+Forecast Icon: https://openweathermap.org/img/w/02d.png
+
+Recorded at: 2021/05/16 15:56:28
+Forecast Time: Sunday 21:56 PM
+Forecast Country: JP
+Forecast City: Tokyo
+Forecast Weather: mist
+Forecast Temperature: 19.8 °C
+Forecast Humidity: 100.0 %
+Forecast Wind speed: 4.12 km/h
+Forecast Icon: https://openweathermap.org/img/w/50n.png
+
+Recorded at: 2021/05/16 15:56:32
+Forecast Time: Sunday 14:56 PM
+Forecast Country: FR
+Forecast City: Ploufragan
+Forecast Weather: broken clouds
+Forecast Temperature: 13.96 °C
+Forecast Humidity: 77.0 %
+Forecast Wind speed: 9.77 km/h
+Forecast Icon: https://openweathermap.org/img/w/04d.png
+
+Recorded at: 2021/05/16 15:56:35
+Forecast Time: Sunday 21:56 PM
+Forecast Country: JP
+Forecast City: Tokyo
+Forecast Weather: mist
+Forecast Temperature: 19.8 °C
+Forecast Humidity: 100.0 %
+Forecast Wind speed: 4.12 km/h
+Forecast Icon: https://openweathermap.org/img/w/50n.png
+
+Recorded at: 2021/05/16 15:56:39
+Forecast Time: Sunday 14:56 PM
+Forecast Country: EG
+Forecast City: Alexandria
+Forecast Weather: clear sky
+Forecast Temperature: 28.0 °C
+Forecast Humidity: 54.0 %
+Forecast Wind speed: 5.66 km/h
+Forecast Icon: https://openweathermap.org/img/w/01d.png
+
+Recorded at: 2021/05/16 15:56:41
+Forecast Time: Sunday 14:56 PM
+Forecast Country: EG
+Forecast City: Cairo
+Forecast Weather: clear sky
+Forecast Temperature: 38.67 °C
+Forecast Humidity: 13.0 %
+Forecast Wind speed: 1.03 km/h
+Forecast Icon: https://openweathermap.org/img/w/01d.png
+
+Recorded at: 2021/05/16 15:56:43
+Forecast Time: Sunday 14:56 PM
+Forecast Country: FR
+Forecast City: Tarascon
+Forecast Weather: overcast clouds
+Forecast Temperature: 18.76 °C
+Forecast Humidity: 77.0 %
+Forecast Wind speed: 5.14 km/h
+Forecast Icon: https://openweathermap.org/img/w/04d.png
+
+Recorded at: 2021/05/16 15:58:12
+Forecast Time: Sunday 15:58 PM
+Forecast Country: RU
+Forecast City: Razvilka
+Forecast Weather: light rain
+Forecast Temperature: 22.66 °C
+Forecast Humidity: 49.0 %
+Forecast Wind speed: 3.0 km/h
+Forecast Icon: https://openweathermap.org/img/wn/10d@4x.png
+
+Recorded at: 2021/05/16 15:58:15
+Forecast Time: Sunday 14:58 PM
+Forecast Country: NL
+Forecast City: Rotterdam
+Forecast Weather: broken clouds
+Forecast Temperature: 12.89 °C
+Forecast Humidity: 76.0 %
+Forecast Wind speed: 6.69 km/h
+Forecast Icon: https://openweathermap.org/img/wn/04d@4x.png
+
+Recorded at: 2021/05/16 15:58:18
+Forecast Time: Sunday 15:58 PM
+Forecast Country: RO
+Forecast City: Constanta
+Forecast Weather: few clouds
+Forecast Temperature: 21.0 °C
+Forecast Humidity: 64.0 %
+Forecast Wind speed: 1.54 km/h
+Forecast Icon: https://openweathermap.org/img/wn/02d@4x.png
+
+Recorded at: 2021/05/16 15:58:21
+Forecast Time: Sunday 18:28 PM
+Forecast Country: IN
+Forecast City: Mumbai
+Forecast Weather: moderate rain
+Forecast Temperature: 35.0 °C
+Forecast Humidity: 46.0 %
+Forecast Wind speed: 6.17 km/h
+Forecast Icon: https://openweathermap.org/img/wn/10d@4x.png
+
+Recorded at: 2021/05/16 15:58:23
+Forecast Time: Sunday 15:58 PM
+Forecast Country: RO
+Forecast City: Constanta
+Forecast Weather: few clouds
+Forecast Temperature: 21.0 °C
+Forecast Humidity: 64.0 %
+Forecast Wind speed: 1.54 km/h
+Forecast Icon: https://openweathermap.org/img/wn/02d@4x.png
+
+Recorded at: 2021/05/16 15:58:25
+Forecast Time: Sunday 20:58 PM
+Forecast Country: CN
+Forecast City: Beijing
+Forecast Weather: light rain
+Forecast Temperature: 20.83 °C
+Forecast Humidity: 35.0 %
+Forecast Wind speed: 4.0 km/h
+Forecast Icon: https://openweathermap.org/img/wn/10n@4x.png
+
+Recorded at: 2021/05/16 15:58:27
+Forecast Time: Sunday 20:58 PM
+Forecast Country: CN
+Forecast City: Shanghai
+Forecast Weather: light rain
+Forecast Temperature: 19.2 °C
+Forecast Humidity: 82.0 %
+Forecast Wind speed: 6.0 km/h
+Forecast Icon: https://openweathermap.org/img/wn/10n@4x.png
+
+Recorded at: 2021/05/16 15:58:29
+Forecast Time: Sunday 07:58 AM
+Forecast Country: US
+Forecast City: Chicago
+Forecast Weather: broken clouds
+Forecast Temperature: 14.98 °C
+Forecast Humidity: 62.0 %
+Forecast Wind speed: 2.57 km/h
+Forecast Icon: https://openweathermap.org/img/wn/04d@4x.png
+
+Recorded at: 2021/05/16 15:58:32
+Forecast Time: Sunday 07:58 AM
+Forecast Country: CA
+Forecast City: Winnipeg
+Forecast Weather: overcast clouds
+Forecast Temperature: 13.37 °C
+Forecast Humidity: 62.0 %
+Forecast Wind speed: 1.03 km/h
+Forecast Icon: https://openweathermap.org/img/wn/04d@4x.png
+
+Recorded at: 2021/05/16 15:58:34
+Forecast Time: Sunday 08:58 AM
+Forecast Country: CA
+Forecast City: Toronto
+Forecast Weather: overcast clouds
+Forecast Temperature: 14.07 °C
+Forecast Humidity: 51.0 %
+Forecast Wind speed: 1.49 km/h
+Forecast Icon: https://openweathermap.org/img/wn/04d@4x.png
+
+Recorded at: 2021/05/16 15:58:36
+Forecast Time: Sunday 15:58 PM
+Forecast Country: RU
+Forecast City: Razvilka
+Forecast Weather: light rain
+Forecast Temperature: 22.66 °C
+Forecast Humidity: 49.0 %
+Forecast Wind speed: 3.0 km/h
+Forecast Icon: https://openweathermap.org/img/wn/10d@4x.png
+
+Recorded at: 2021/05/16 15:58:39
+Forecast Time: Sunday 14:58 PM
+Forecast Country: FR
+Forecast City: Tarascon
+Forecast Weather: overcast clouds
+Forecast Temperature: 18.76 °C
+Forecast Humidity: 77.0 %
+Forecast Wind speed: 5.14 km/h
+Forecast Icon: https://openweathermap.org/img/wn/04d@4x.png
+
+Recorded at: 2021/05/16 15:58:40
+Forecast Time: Sunday 14:58 PM
+Forecast Country: FR
+Forecast City: Ploufragan
+Forecast Weather: broken clouds
+Forecast Temperature: 13.96 °C
+Forecast Humidity: 77.0 %
+Forecast Wind speed: 9.77 km/h
+Forecast Icon: https://openweathermap.org/img/wn/04d@4x.png
+
+Recorded at: 2021/05/16 15:58:42
+Forecast Time: Sunday 15:58 PM
+Forecast Country: RO
+Forecast City: Bucharest
+Forecast Weather: scattered clouds
+Forecast Temperature: 21.51 °C
+Forecast Humidity: 73.0 %
+Forecast Wind speed: 3.09 km/h
+Forecast Icon: https://openweathermap.org/img/wn/03d@4x.png
+
+Recorded at: 2021/05/16 15:58:46
+Forecast Time: Sunday 15:58 PM
+Forecast Country: RO
+Forecast City: Constanta
+Forecast Weather: few clouds
+Forecast Temperature: 21.0 °C
+Forecast Humidity: 64.0 %
+Forecast Wind speed: 1.54 km/h
+Forecast Icon: https://openweathermap.org/img/wn/02d@4x.png
+

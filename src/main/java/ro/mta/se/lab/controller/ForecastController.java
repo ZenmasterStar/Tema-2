@@ -6,7 +6,16 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import ro.mta.se.lab.model.Forecast;
+
+import javax.net.ssl.HttpsURLConnection;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.net.URL;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class ForecastController {
     private ObservableList<Forecast> forecastData;
@@ -29,14 +38,11 @@ public class ForecastController {
     @FXML
     private Label windLabel;
 
+    @FXML
+    private ImageView icon;
+
     public ForecastController(ObservableList<Forecast> forecastData) {
         this.forecastData = forecastData;
-    }
-
-    @FXML
-    void Select(ActionEvent event){
-        //String s = countryComboBox.getSelectionModel().getSelectedItem().toString();
-        //label.setText(s);
     }
 
     private void getCountries() {
@@ -71,6 +77,8 @@ public class ForecastController {
     }
 
     private void getForecast(String value) {
+        try {
+        FileWriter myWriter= new FileWriter("src/main/resources/out/history.txt", true);
         for(int i = 0; i < forecastData.size(); i++)
         {
             if(forecastData.get(i).getCity().equals(value))
@@ -82,26 +90,36 @@ public class ForecastController {
                 temperatureLabel.setText(forecast.getTemperature().toString());
                 humidityLabel.setText(forecast.getHumidity().toString());
                 windLabel.setText(forecast.getWind().toString());
+                icon.setImage(new Image(forecast.getIconLink()));
+
+                DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+                LocalDateTime now = LocalDateTime.now();
+                myWriter.append("Recorded at: " + dtf.format(now));
+                myWriter.append("\nForecast Time: " + forecast.getTime());
+                myWriter.append("\nForecast Country: " + forecast.getCountry());
+                myWriter.append("\nForecast City: " + forecast.getCity());
+                myWriter.append("\nForecast Weather: " + forecast.getWeather());
+                myWriter.append("\nForecast Temperature: " + forecast.getTemperature() + " °C");
+                myWriter.append("\nForecast Humidity: " + forecast.getHumidity() + " %");
+                myWriter.append("\nForecast Wind speed: " + forecast.getWind() + " km/h");
+                myWriter.append("\nForecast Icon: " + forecast.getIconLink());
+                myWriter.append("\n\n");
+
                 break;
             }
         }
+        myWriter.close();
+        } catch (IOException e) {
+            System.out.println("An error occurred at writing the history.");
+            e.printStackTrace();
+        }
     }
-
 
     @FXML
     private void initialize() {
         getCountries();
         countryComboBox.setOnAction( e-> getCities(countryComboBox.getValue()));
         cityComboBox.setOnAction( e-> getForecast(cityComboBox.getValue()));
-
-//        for(Forecast forecast:forecastData) {
-//            cityComboBox.getItems().add(forecast.getCity());
-//        }
-//        numeColumn.setCellValueFactory(cellData -> cellData.getValue().numeProperty());
-//        prenumeColumn.setCellValueFactory(cellData -> cellData.getValue().prenumeProperty());
-//        medieColumn.setCellValueFactory(cellData -> cellData.getValue().medieProperty().asObject());
-//
-//        studentTable.setItems(studentData);
     }
 
 }

@@ -26,6 +26,7 @@ public class Forecast {
     DoubleProperty temperature;
     DoubleProperty humidity;
     DoubleProperty wind;
+    StringProperty iconLink;
 
     String getAPI(double lat, double lon) {
         String API_KEY = "210a3979b414e1bbdaab37a766008f2f";
@@ -77,12 +78,17 @@ public class Forecast {
         sdf.setTimeZone(TimeZone.getTimeZone(timezone));
         this.time = new SimpleStringProperty(sdf.format(dt*1000));
 
-        //JsonObject weatherObject = current.get("weather").asObject();
-        //String weather = weatherObject.get("main").asString();
+        JsonArray weatherArray = current.get("weather").asArray();
+        JsonObject weatherObject = weatherArray.get(0).asObject();
+        String weather = weatherObject.get("description").asString();
 
+        String iconLink = "https://openweathermap.org/img/wn/" + weatherObject.get("icon").asString() + "@4x.png" ;
+
+        this.weather = new SimpleStringProperty(weather);
         this.temperature = new SimpleDoubleProperty(temperature);
         this.humidity = new SimpleDoubleProperty(humidity);
         this.wind = new SimpleDoubleProperty(wind);
+        this.iconLink = new SimpleStringProperty(iconLink);
     }
 
     public String getCity() {
@@ -169,6 +175,18 @@ public class Forecast {
         this.wind.set(wind);
     }
 
+    public String getIconLink() {
+        return iconLink.get();
+    }
+
+    public StringProperty iconLinkProperty() {
+        return iconLink;
+    }
+
+    public void setIconLink(String iconLink) {
+        this.iconLink.set(iconLink);
+    }
+
     public void printForecast(){
         System.out.println(getCity());
         System.out.println(getCountry());
@@ -177,6 +195,7 @@ public class Forecast {
         System.out.println(getTemperature());
         System.out.println(getHumidity());
         System.out.println(getWind());
+        System.out.println(getIconLink());
         System.out.println();
     }
 

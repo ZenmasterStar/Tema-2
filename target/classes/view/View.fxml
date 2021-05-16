@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <SplitPane dividerPositions="0.5" layoutX="177.0" layoutY="60.0" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -31,7 +31,7 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="25.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0">
+                  <ImageView fx:id="icon" fitHeight="100.0" fitWidth="100.0" layoutX="25.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0">
                      <image>
                         <Image url="@../img/09d@2x.png" />
                      </image>
@@ -76,7 +76,7 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="161.0" layoutY="200.0" text="\%" textFill="#686868" AnchorPane.rightAnchor="110.0">
+                  <Label layoutX="161.0" layoutY="200.0" text="\%" textFill="#686868" AnchorPane.rightAnchor="100.0">
                      <font>
                         <Font size="18.0" />
                      </font>
